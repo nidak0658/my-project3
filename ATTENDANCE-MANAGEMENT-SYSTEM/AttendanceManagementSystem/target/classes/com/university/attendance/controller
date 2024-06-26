@@ -1,0 +1,15 @@
+package com.university.attendance.controller;
+
+@WebServlet("/students")
+public class StudentController extends HttpServlet {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) {
+        // Fetch list of students from database and forward to view
+    }
+}
+
+@WebServlet("/attendance")
+public class AttendanceController extends HttpServlet {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) {
+        // Handle attendance submission and update database
+    }
+}

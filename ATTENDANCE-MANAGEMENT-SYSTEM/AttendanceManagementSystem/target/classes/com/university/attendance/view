@@ -1,0 +1,17 @@
+CREATE DATABASE AttendanceDB;
+USE AttendanceDB;
+
+CREATE TABLE Students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    department VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Attendance (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    student_id INT,
+    date DATE,
+    status ENUM('Present', 'Absent') DEFAULT 'Absent',
+    FOREIGN KEY (student_id) REFERENCES Students(id)
+);

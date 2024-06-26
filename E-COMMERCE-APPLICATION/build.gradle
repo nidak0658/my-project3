@@ -1,0 +1,9 @@
+dependencies {
+    // Add Firebase Authentication dependency
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+}
+
+dependencies {
+    // Add Stripe dependency
+    implementation 'com.stripe:stripe-android:20.0.0'
+}
